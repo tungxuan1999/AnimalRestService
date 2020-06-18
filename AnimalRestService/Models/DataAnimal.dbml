@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="animailsinthezoo" Class="DataAnimalDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=den1.mssql7.gear.host;Initial Catalog=animailsinthezoo;Persist Security Info=True;User ID=animailsinthezoo" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="animailsinthezooConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Animal" Member="Animals">
+    <Type Name="Animal">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="KIND" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="WEIGHT" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="HEIGHT" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="SEX" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="AGE" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>
